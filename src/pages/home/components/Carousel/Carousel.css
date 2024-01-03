@@ -1,0 +1,371 @@
+.carousel_wrapper {
+    display: flex;
+    width: 95%;
+    margin-left: 30px;
+    gap: 40px;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 295px;
+    margin: 35px 0 40px;
+}
+
+.carousel_title {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    margin-bottom: 25px;
+}
+
+.carousel_list {
+    display: flex;
+    width: 100%;
+}
+
+.carousel_item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 470px !important;
+    height: 230px !important;
+    border-radius: 8px !important;
+}
+
+.carousel_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 470px;
+    height: 230px;
+    border-radius: 8px;
+    z-index: -1;
+}
+
+.carousel_bookmark {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s;
+    z-index: 10;
+}
+
+.carousel_bookmark:hover {
+    background-color: #fff;
+}
+
+.carousel_bookmark:hover svg path {
+    stroke: #000
+}
+
+.carousel_info {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 24px 24px;
+}
+
+.carousel_header {
+    display: flex;
+    align-items: center;
+}
+
+.carousel_point {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    border: none;
+    background-color: #FFF;
+    opacity: 0.5;
+    margin: 0 8px;
+}
+
+.carousel_category {
+    display: flex;
+    gap: 6px;
+}
+
+.carousel_text {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.carousel_subtitle {
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.carousel_play-wrapper {
+    width: 470px;
+    height: 230px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+    transition: all .3s;
+    z-index: 9;
+}
+
+.carousel_play-box {
+    display: flex;
+    align-items: center;
+    width: 117px;
+    height: 48px;
+    border-radius: 28.5px;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 9px;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.carousel_play-text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.carousel_item:hover .carousel_play-wrapper {
+    display: flex;
+}
+
+@media screen and (max-width: 769px) {
+    .carousel {
+        height: 300px;
+        padding: 0 25px;
+    }
+
+    .carousel_title {
+        color: #FFF;
+        font-size: 32px;
+        font-weight: 300;
+        letter-spacing: -0.5px;
+        margin-bottom: 25px;
+    }
+
+    .carousel_list {
+        height: 230px;
+        gap: 16px;
+    }
+
+    .carousel_item {
+        width: 470px !important;
+        height: 230px !important;
+        margin: 0 !important;
+        border-radius: 8px !important;
+    }
+
+    .carousel_image {
+        width: 470px;
+        height: 230px;
+        object-fit: cover;    
+    }
+
+    .carousel_bookmark {
+        top: 16px;
+        right: 24px;
+    }
+
+    .carousel_info {
+        padding: 0 0 24px 24px;
+    }
+
+    .carousel_text {
+        font-size: 15px;
+    }
+
+    .carousel_subtitle {
+        font-size: 24px;
+    }
+
+    .carousel_item:hover .carousel_play-wrapper {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .carousel {
+        height: 220px;
+        padding: 0 16px;
+    }
+
+    .carousel_title {
+        color: #FFF;
+        font-size: 22px;
+        font-weight: 300;
+        letter-spacing: -0.312px;
+        margin-bottom: 20px;
+    }
+
+    .carousel_list {
+        width: 426px;
+        height: 180px;
+        gap: 16px;
+    }
+
+    .carousel_item {
+        width: 280px !important;
+        height: 180px !important;
+        margin: 0 !important;
+        border-radius: 8px !important;
+    }
+
+    .carousel_image {
+        width: 280px;
+        height: 180px;
+        object-fit: cover;    
+    }
+
+    .carousel_bookmark {
+        top: 8px;
+        right: 10px;
+    }
+
+    .carousel_info {
+        padding:  0 0 10px 16px;
+    }
+
+    .carousel_text {
+        font-size: 12px;
+    }
+
+    .carousel_subtitle {
+        font-size: 14px;
+    }
+
+    .carousel_item:hover .carousel_play-wrapper {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .carousel {
+        height: 180px;
+        padding: 0 16px;
+    }
+
+    .carousel_title {
+        color: #FFF;
+        font-size: 22px;
+        font-weight: 300;
+        letter-spacing: -0.312px;
+        margin-bottom: 10px;
+    }
+
+    .carousel_list {
+        width: 376px;
+        height: 150px;
+        gap: 16px;
+    }
+
+    .carousel_item {
+        width: 300px !important;
+        height: 140px !important;
+        margin: 0 !important;
+        border-radius: 8px !important;
+    }
+
+    .carousel_image {
+        width: 300px;
+        height: 140px;
+        object-fit: contain;    
+    }
+
+    .carousel_bookmark {
+        top: 8px;
+        right: 15px;
+    }
+
+    .carousel_info {
+        padding:  0 0 10px 16px;
+    }
+
+    .carousel_text {
+        font-size: 12px;
+    }
+
+    .carousel_subtitle {
+        font-size: 14px;
+    }
+
+    .carousel_item:hover .carousel_play-wrapper {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .carousel {
+        height: 180px;
+        padding: 0 16px;
+    }
+
+    .carousel_title {
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: -0.312px;
+        margin-bottom: 10px;
+        /* margin-left: 10px; */
+    }
+
+    .carousel_list {
+        width: 320px;
+        height: 140px;
+        gap: 16px;
+    }
+
+    .carousel_item {
+        width: 240px !important;
+        height: 140px !important;
+        margin: 0 !important;
+        border-radius: 8px !important;
+    }
+
+    .carousel_image {
+        width: 240px;
+        height: 140px;
+        object-fit: contain;    
+    }
+
+    .carousel_bookmark {
+        top: 8px;
+        right: 15px;
+    }
+
+    .carousel_info {
+        padding:  0 0 20px 16px;
+    }
+
+    .carousel_text {
+        font-size: 10px;
+    }
+
+    .carousel_subtitle {
+        font-size: 12px;
+    }
+
+    .carousel_item:hover .carousel_play-wrapper {
+        display: none;
+    }
+}

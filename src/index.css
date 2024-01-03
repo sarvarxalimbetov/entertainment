@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #10141E;
+    font-family: 'Inter', sans-serif;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #10141E inset !important;
+    -webkit-text-fill-color: #fff;
+    border: none;
+}

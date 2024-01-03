@@ -1,0 +1,38 @@
+.wrapper {
+    width: 1440px;
+    height: auto;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1025px) {
+    .wrapper {
+        width: 1024px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .wrapper {
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .wrapper {
+        width: 425px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .wrapper {
+        width: 375px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .wrapper {
+        width: 320px;
+        overflow-x: hidden;
+    }
+}
