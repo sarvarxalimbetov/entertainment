@@ -6,7 +6,7 @@ import IconBookmarkFull from "../../../public/assets/icon-bookmark-full";
 import playBtn from "../../../public/assets/icon-play.svg";
 import { useDispatch } from "react-redux";
 import { bookmarkedData, unBookmarkedData } from "../../redux/dataSlice";
-import "./Post.css";
+import "./post.css";
 
 const Post = ({ data, type }) => {
   const dispatch = useDispatch();
