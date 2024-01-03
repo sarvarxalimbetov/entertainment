@@ -2,8 +2,13 @@
     width: 1440px;
     height: auto;
     margin: 0;
-    overflow-x: hidden;
+    overflow: hidden;
+    overflow-y: scroll;
     box-sizing: border-box;
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
 }
 
 @media screen and (max-width: 1025px) {

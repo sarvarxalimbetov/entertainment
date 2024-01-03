@@ -1,6 +1,6 @@
 import React from 'react'
 import data from "../../data/data.json"
-import Post from '../../components/Post/post'
+import Post from '../components/Post/post'
 import './Movies.css'
 
 const Movies = () => {

@@ -1,11 +1,11 @@
 import React from "react";
-import CatergoryMovies from "../../../public/assets/icon-category-movie.svg";
-import CatergorySeries from "../../../public/assets/icon-category-tv.svg";
-import IconBookmarkEmpty from "../../../public/assets/icon-bookmark-empty";
-import IconBookmarkFull from "../../../public/assets/icon-bookmark-full";
-import playBtn from "../../../public/assets/icon-play.svg";
+import CatergoryMovies from "../../../../public/assets/icon-category-movie.svg";
+import CatergorySeries from "../../../../public/assets/icon-category-tv.svg";
+import IconBookmarkEmpty from "../../../../public/assets/icon-bookmark-empty";
+import IconBookmarkFull from "../../../../public/assets/icon-bookmark-full";
+import playBtn from "../../../../public/assets/icon-play.svg";
 import { useDispatch } from "react-redux";
-import { bookmarkedData, unBookmarkedData } from "../../redux/dataSlice";
+import { bookmarkedData, unBookmarkedData } from "../../../redux/dataSlice";
 import "./post.css";
 
 const Post = ({ data, type }) => {

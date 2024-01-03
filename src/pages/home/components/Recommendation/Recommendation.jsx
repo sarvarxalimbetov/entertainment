@@ -1,5 +1,5 @@
 import React from "react";
-import Post from "../../../../components/Post/post";
+import Post from "../../../components/Post/post";
 import data from "../../../../data/data.json";
 import "./Recommendation.css";
 

@@ -4,7 +4,7 @@ import Carousel from "./components/Carousel/Carousel";
 import { useForm } from "react-hook-form";
 import Recommendation from "./components/Recommendation/Recommendation";
 import data from "../../data/data.json";
-import Post from "../../components/Post/post";
+import Post from "../components/Post/post";
 import "./Home.css";
 
 const Home = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import Post from "../../components/Post/post";
+import Post from "../components/Post/post";
 import { useSelector } from "react-redux";
 import "./Bookmarked.css";
 
