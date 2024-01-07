@@ -130,7 +130,7 @@
         width: 200px;
         height: 20px;
         gap: 25px;
-        margin: 0 80px;
+        margin: 0 70px;
     }
 
     .navbar_button {
@@ -144,13 +144,43 @@
     }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 410px) {
+    .navbar {
+        width: 410px;
+    }
+
+    .navbar_form {
+        margin: 0 60px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar {
+        width: 400px;
+    }
+
+    .navbar_form {
+        margin: 0 60px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .navbar {
+        width: 390px;
+    }
+
+    .navbar_form {
+        margin: 0 60px;
+    }
+}
+
+@media screen and (max-width: 371px) {
     .navbar {
         position: fixed;
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: 376px;
+        width: 370px;
         height: 60px;
         margin: 0;
         border-radius: 0;
@@ -170,7 +200,7 @@
         width: 180px;
         height: 20px;
         gap: 25px;
-        margin: 0 60px;
+        margin: 0 45px;
     }
 
     .navbar_button {
@@ -179,8 +209,62 @@
     }
 
     .navbar_avatar {
-        width: 24px;
-        height: 24px;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .navbar {
+        width: 360px;
+        padding: 0 10px;
+    }
+
+    .navbar_form {
+        width: 130px;
+        margin: 0 70px;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    .navbar {
+        width: 350px;
+        padding: 0 10px;
+    }
+
+    .navbar_form {
+        width: 130px;
+        margin: 0 60px;
+    }
+
+    .navbar_logo {
+        width: 30px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .navbar {
+        width: 340px;
+        padding: 0 10px;
+    }
+
+    .navbar_form {
+        width: 130px;
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .navbar {
+        width: 330px;
+        padding: 0 5px;
+    }
+
+    .navbar_form {
+        width: 130px;
+        margin: 0 50px;
     }
 }
 
